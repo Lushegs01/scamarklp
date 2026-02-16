@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanMark</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="ambient-glow"></div>
+
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="brand">ScanMark<span>.</span></a>
+            <div class="nav-links">
+                <a href="#benefits">Benefits</a>
+                <a href="#how-it-works">Process</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://scanmark-funaab.onrender.com/login" class="btn-text">Log in</a>
+                <a href="https://scanmark-funaab.onrender.com/signup" class="btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content" data-animate="fade-up">
+                    <div class="pill-badge">v1.0 is now live</div>
+                    <h1>Attendance in <span class="gradient-text">seconds</span>.<br>Not minutes.</h1>
+                    <p class="hero-sub">Eliminate paper sheets and proxy signing. The secure, QR-based attendance
+                        infrastructure for modern universities.</p>
+
+                    <div class="cta-group">
+                        <a href="https://scanmark-funaab.onrender.com/signup" class="btn-primary large">Get Started
+                            Free</a>
+                        <button class="btn-secondary large" id="watchDemoBtn">
+                            <span class="play-icon">▶</span> Watch Demo
+                        </button>
+                    </div>
+
+                    <div class="social-proof">
+                        <div class="avatars">
+                            <div class="avatar" style="background: green;"></div>
+                            <div class="avatar" style="background: red;"></div>
+                            <div class="avatar" style="background: #bbb;"></div>
+                        </div>
+                        <p>Used by <strong>500+ Lecturers</strong> at FUNAAB & beyond.</p>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-animate="fade-left">
+                    <img src="app-screenshot.png" alt="ScanMark Dashboard Interface" class="app-screenshot-3d">
+                    <div class="app-body">
+                        <div class="qr-box">
+                            <svg viewBox="0 0 100 100" class="qr-svg">
+                                <path
+                                    d="M10,10 h30 v30 h-30 z M60,10 h30 v30 h-30 z M10,60 h30 v30 h-30 z M50,50 h10 v10 h-10 z"
+                                    fill="#1e293b" />
+                                <rect class="scan-line" x="0" y="0" width="100" height="2" fill="#3b82f6" />
+                            </svg>
+                        </div>
+                        <div class="success-message">
+                            <span class="check">✓</span> Attendance Marked
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="section-padding">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <div class="pill-badge">Why ScanMark?</div>
+                    <h2>Reclaim your lecture time.</h2>
+                    <p>Manual attendance wastes hours per class. ScanMark reduces it to seconds.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-card" data-animate="fade-up" style="--delay: 0.1s">
+                        <div class="card-visual centered">
+                            <div class="qr-scanner-container">
+                                <svg class="qr-svg-bg" viewBox="0 0 100 100" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="10" y="10" width="25" height="25" rx="2" stroke="white" stroke-width="4" />
+                                    <rect x="17" y="17" width="11" height="11" rx="1" fill="white" />
+
+                                    <rect x="65" y="10" width="25" height="25" rx="2" stroke="white" stroke-width="4" />
+                                    <rect x="72" y="17" width="11" height="11" rx="1" fill="white" />
+
+                                    <rect x="10" y="65" width="25" height="25" rx="2" stroke="white" stroke-width="4" />
+                                    <rect x="17" y="72" width="11" height="11" rx="1" fill="white" />
+
+                                    <rect x="45" y="10" width="8" height="8" fill="white" />
+                                    <rect x="55" y="20" width="8" height="8" fill="white" />
+                                    <rect x="45" y="45" width="8" height="8" fill="white" />
+                                    <rect x="65" y="45" width="8" height="8" fill="white" />
+                                    <rect x="80" y="55" width="8" height="8" fill="white" />
+                                    <rect x="60" y="70" width="8" height="8" fill="white" />
+                                    <rect x="80" y="80" width="8" height="8" fill="white" />
+                                    <rect x="45" y="80" width="8" height="8" fill="white" />
+                                </svg>
+
+                                <div class="scanner-laser"></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Lightning Fast</h3>
+                            <p>Generate a code. Students scan. Done. No roll calls, no passing papers.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card" data-animate="fade-up" style="--delay: 0.2s">
+                        <div class="card-visual centered">
+                            <div class="location-radar">
+                                <div class="radar-ring r1"></div>
+                                <div class="radar-ring r2"></div>
+                                <svg class="map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Geo-Fencing</h3>
+                            <p>Ensure students are physically in the classroom using GPS bounds.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card" data-animate="fade-up" style="--delay: 0.3s">
+                        <div class="card-visual centered">
+                            <div class="bar-chart-mini">
+                                <div class="chart-bar red" style="--h: 45%; --d: 0s"></div>
+                                <div class="chart-bar blue" style="--h: 85%; --d: 0.2s"></div>
+                                <div class="chart-bar green" style="--h: 65%; --d: 0.4s"></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Live Analytics</h3>
+                            <p>Watch attendance graphs populate in real-time as students scan.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card wide" data-animate="fade-up" style="--delay: 0.4s">
+                        <div class="card-content">
+                            <h3>Export Ready</h3>
+                            <p>Download reports compatible with your university portal (CSV, PDF, Excel).</p>
+                        </div>
+
+                        <div class="card-visual right-aligned">
+                            <div class="file-stack-container">
+                                <div class="file-icon file-csv">
+                                    <span class="file-tag">CSV</span>
+                                    <div class="file-lines"></div>
+                                </div>
+
+                                <div class="file-icon file-xls">
+                                    <span class="file-tag">XLS</span>
+                                    <div class="file-grid-icon"></div>
+                                </div>
+
+                                <div class="file-icon file-pdf">
+                                    <span class="file-tag">PDF</span>
+                                    <div class="file-lines"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section-padding dark-mode">
+            <div class="container">
+                <div class="steps-wrapper">
+                    <div class="step-line"></div>
+
+                    <div class="step-item" data-animate="fade-right">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Project the Code</h3>
+                            <p>Login to ScanMark and select your role. A unique, dynamic QR code appears on the
+                                screen for students.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item right" data-animate="fade-left">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Students Scan</h3>
+                            <p>Students use their phones. No app download required, it works directly in the browser.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step-item" data-animate="fade-right">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Data Syncs</h3>
+                            <p>The list is compiled instantly. Close the session and export your report.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section-padding pricing-section">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2>Simple, transparent pricing.</h2>
+                    <p>No hidden fees. Start for free, upgrade when you need more power.</p>
+
+                    <div class="pricing-toggle">
+                        <span class="toggle-label active" data-plan="monthly">Monthly</span>
+                        <label class="switch">
+                            <input type="checkbox" id="billing-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label" data-plan="yearly">Yearly <span
+                                class="discount-badge">-20%</span></span>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-animate="fade-up" style="--delay: 0.1s">
+                        <div class="card-header">
+                            <h3 class="plan-name">Starter</h3>
+                            <div class="price">
+                                <span class="currency">₦</span>
+                                <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <p class="plan-desc">Perfect for individual lecturers trying out the system.</p>
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> 1 Active Course</li>
+                            <li><span class="check">✓</span> Up to 100 Students</li>
+                            <li><span class="check">✓</span> 7-Day History Retention</li>
+                            <li><span class="check">✓</span> Basic PDF Exports</li>
+                        </ul>
+                        <a href="https://scanmark-funaab.onrender.com/signup" class="btn-secondary full-width">Get
+                            Started Free</a>
+                    </div>
+
+                    <div class="pricing-card popular" data-animate="fade-up" style="--delay: 0.2s">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="card-header">
+                            <h3 class="plan-name">Lecturer Pro</h3>
+                            <div class="price">
+                                <span class="currency">₦</span>
+                                <span class="amount" data-monthly="25,000" data-yearly="240,000">25,000</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <p class="plan-desc">For serious academics managing multiple large classes.</p>
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> <strong>Unlimited</strong> Courses</li>
+                            <li><span class="check">✓</span> <strong>Unlimited</strong> Students</li>
+                            <li><span class="check">✓</span> Full Semester History</li>
+                            <li><span class="check">✓</span> CSV & Excel Exports</li>
+                            <li><span class="check">✓</span> Priority Email Support</li>
+                        </ul>
+                        <a href="https://scanmark-funaab.onrender.com/signup" class="btn-primary full-width">Upgrade to
+                            Pro</a>
+                    </div>
+
+                    <div class="pricing-card" data-animate="fade-up" style="--delay: 0.3s">
+                        <div class="card-header">
+                            <h3 class="plan-name">Department</h3>
+                            <div class="price">
+                                <span class="amount">Custom</span>
+                            </div>
+                            <p class="plan-desc">For HODs and Deans needing oversight and analytics.</p>
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> All Pro Features</li>
+                            <li><span class="check">✓</span> Admin Dashboard</li>
+                            <li><span class="check">✓</span> HOD Analytics Reports</li>
+                            <li><span class="check">✓</span> University SSO Integration</li>
+                        </ul>
+                        <button class="btn-secondary full-width">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can students cheat by sending the code to friends?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. Our dynamic QR codes rotate every 5 seconds. Plus, Geo-Fencing prevents scanning if
+                                the student isn't physically in the lecture hall.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Does it work if the internet is slow?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>ScanMark is optimized for low-bandwidth environments. The student interface is
+                                ultra-lightweight (under 50kb), so it loads instantly even on Edge/3G networks.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I export the attendance list?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>With one click. You can export directly to CSV, Excel, or PDF formats formatted
+                                specifically for university grading portals.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Is there a limit to class size?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The Starter plan supports up to 100 students. The Pro plan allows unlimited students,
+                                tested successfully with classes of over 1,500 attendees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box" data-animate="zoom-in">
+                    <h2>Ready to modernize your classroom?</h2>
+                    <p>Join the lecturers saving hours every semester.</p>
+                    <a href="https://scanmark-funaab.onrender.com/signup" class="btn-primary large">Start Free Trial</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h4>LUSHEGS.</h4>
+                <p>Developer, ScanMark</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="https://x.com/ScanMarkApp">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
