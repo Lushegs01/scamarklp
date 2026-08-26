@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanMark — QR Attendance for Modern Universities</title>
+    <meta name="description" content="Eliminate paper sheets and proxy signing. ScanMark is the secure, QR-based attendance platform for modern universities — built for FUNAAB and beyond.">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="main-nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo" aria-label="ScanMark home">
+                <div class="nav-logo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1"/>
+                        <path d="M14 14h2v2h-2z M16 16h2v2h-2z M18 14h2v2h-2z M14 18h2v2h-2z M18 18h2v2h-2z"/>
+                    </svg>
+                </div>
+                ScanMark<span class="dot">.</span>
+            </a>
+
+            <ul class="nav-links" role="list">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://scanmark-funaab.onrender.com/login" class="btn btn-ghost">Log in</a>
+                <a href="https://scanmark-funaab.onrender.com/signup" class="btn btn-dark btn-sm">Get Started</a>
+            </div>
+
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+        <a href="#features" class="drawer-link">Features</a>
+        <a href="#how-it-works" class="drawer-link">How it works</a>
+        <a href="#pricing" class="drawer-link">Pricing</a>
+        <a href="#faq" class="drawer-link">FAQ</a>
+        <div class="nav-drawer-actions">
+            <a href="https://scanmark-funaab.onrender.com/login" class="btn btn-outline">Log in</a>
+            <a href="https://scanmark-funaab.onrender.com/signup" class="btn btn-dark">Get Started Free</a>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-glow-2" aria-hidden="true"></div>
+
+            <div class="container hero-layout">
+                <div class="hero-content" data-animate="up">
+                    <div class="hero-badge">
+                        <span class="hero-badge-chip">v1.0 Live</span>
+                        Now available at FUNAAB &amp; beyond
+                    </div>
+
+                    <h1 class="hero-title">
+                        Attendance in<br>
+                        <span class="green-text">seconds</span>, not minutes.
+                    </h1>
+
+                    <p class="hero-desc">
+                        Eliminate paper sheets and proxy signing. The secure, QR-based attendance platform built for modern African universities.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="https://scanmark-funaab.onrender.com/signup" class="btn btn-green btn-lg">
+                            Get Started Free
+                        </a>
+                        <button class="btn btn-outline btn-lg" id="watch-demo-btn">
+                            <span class="play-icon" aria-hidden="true">▶</span>
+                            Watch Demo
+                        </button>
+                    </div>
+
+                    <div class="hero-proof">
+                        <div class="hero-avatars" aria-label="User avatars">
+                            <div class="hero-avatar" aria-hidden="true">AD</div>
+                            <div class="hero-avatar" aria-hidden="true">BK</div>
+                            <div class="hero-avatar" aria-hidden="true">CF</div>
+                            <div class="hero-avatar" aria-hidden="true">+</div>
+                        </div>
+                        <p class="hero-proof-text">Trusted by <strong>500+ lecturers</strong> across FUNAAB</p>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-animate="right">
+                    <div class="hero-phone-wrap">
+                        <img
+                            src="new-screenshot.png"
+                            alt="ScanMark app — Create Account page"
+                            class="hero-screenshot"
+                            id="hero-screenshot"
+                            loading="eager"
+                        >
+
+                        <!-- Floating stat cards -->
+                        <div class="float-card float-card-1" aria-hidden="true">
+                            <div class="float-card-icon green">✅</div>
+                            <div>
+                                <strong>247 students</strong>
+                                <span class="sub">Marked present today</span>
+                            </div>
+                        </div>
+
+                        <div class="float-card float-card-2" aria-hidden="true">
+                            <div class="float-card-icon yellow">⚡</div>
+                            <div>
+                                <strong>3.2 sec</strong>
+                                <span class="sub">Average scan time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STATS STRIP ===== -->
+        <section class="stats-strip" aria-label="Key statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-animate="up">
+                        <div class="stat-number">500<span>+</span></div>
+                        <div class="stat-label">Active Lecturers</div>
+                    </div>
+                    <div class="stat-item" data-animate="up" style="transition-delay:0.1s">
+                        <div class="stat-number">98<span>%</span></div>
+                        <div class="stat-label">Accuracy Rate</div>
+                    </div>
+                    <div class="stat-item" data-animate="up" style="transition-delay:0.2s">
+                        <div class="stat-number">&lt;5<span>s</span></div>
+                        <div class="stat-label">Scan Time per Student</div>
+                    </div>
+                    <div class="stat-item" data-animate="up" style="transition-delay:0.3s">
+                        <div class="stat-number">0<span>₦</span></div>
+                        <div class="stat-label">To Get Started</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURES / BENTO ===== -->
+        <section class="features section" id="features">
+            <div class="container">
+                <div class="section-header" data-animate="up">
+                    <div class="eyebrow">Why ScanMark?</div>
+                    <h2>Reclaim your lecture time.</h2>
+                    <p>Manual attendance wastes hours every semester. ScanMark reduces the whole process to under 10 seconds.</p>
+                </div>
+
+                <div class="bento-grid">
+
+                    <!-- Card 1: Lightning Fast (wide, 7 cols) -->
+                    <div class="bcard bcard-wide bcard-featured" data-animate="up">
+                        <div class="bcard-body">
+                            <div class="bcard-tag bcard-tag-green">
+                                <span class="tag-pulse"></span>
+                                <span>Core Engine</span>
+                            </div>
+                            <h3 class="bcard-title">Lightning Fast QR Attendance</h3>
+                            <p class="bcard-desc">Generate an encrypted session code on your projector. Students scan directly from their seats and get verified in under 3 seconds.</p>
+                        </div>
+                        <div class="bcard-visual bcard-visual-scan">
+                            <div class="scan-hud">
+                                <!-- Left: QR Scanner Box -->
+                                <div class="scan-qr-box">
+                                    <div class="scan-qr-corner tl"></div>
+                                    <div class="scan-qr-corner tr"></div>
+                                    <div class="scan-qr-corner bl"></div>
+                                    <div class="scan-qr-corner br"></div>
+                                    <div class="scan-qr-matrix">
+                                        <div class="qr-matrix-grid">
+                                            <span class="qrm-cell c1"></span><span class="qrm-cell c2"></span><span class="qrm-cell c3"></span><span class="qrm-cell c1"></span><span class="qrm-cell c2"></span>
+                                            <span class="qrm-cell c2"></span><span class="qrm-cell c1"></span><span class="qrm-cell c2"></span><span class="qrm-cell c3"></span><span class="qrm-cell c1"></span>
+                                            <span class="qrm-cell c3"></span><span class="qrm-cell c3"></span><span class="qrm-cell c1"></span><span class="qrm-cell c2"></span><span class="qrm-cell c3"></span>
+                                            <span class="qrm-cell c1"></span><span class="qrm-cell c2"></span><span class="qrm-cell c3"></span><span class="qrm-cell c1"></span><span class="qrm-cell c2"></span>
+                                            <span class="qrm-cell c2"></span><span class="qrm-cell c1"></span><span class="qrm-cell c2"></span><span class="qrm-cell c3"></span><span class="qrm-cell c1"></span>
+                                        </div>
+                                        <div class="scan-laser-line"></div>
+                                    </div>
+                                    <div class="scan-qr-badge">
+                                        <span class="live-dot"></span> CSC 301 · JAO 1
+                                    </div>
+                                </div>
+
+                                <!-- Right: Live Scanned Ticker -->
+                                <div class="scan-feed-box">
+                                    <div class="feed-header">
+                                        <span class="feed-title">Live Scans</span>
+                                        <span class="feed-count">184 Verified</span>
+                                    </div>
+                                    <div class="feed-list">
+                                        <div class="feed-item feed-item-1">
+                                            <div class="feed-avatar av-1">AO</div>
+                                            <div class="feed-info">
+                                                <div class="feed-name">Adebayo Oladipo</div>
+                                                <div class="feed-meta">CSC/20/1042 · 10:14:02</div>
+                                            </div>
+                                            <div class="feed-status"><span class="badge-verified">✓ 2.1s</span></div>
+                                        </div>
+                                        <div class="feed-item feed-item-2">
+                                            <div class="feed-avatar av-2">CE</div>
+                                            <div class="feed-info">
+                                                <div class="feed-name">Chioma Eze</div>
+                                                <div class="feed-meta">CSC/20/0893 · 10:14:05</div>
+                                            </div>
+                                            <div class="feed-status"><span class="badge-verified">✓ 1.8s</span></div>
+                                        </div>
+                                        <div class="feed-item feed-item-3">
+                                            <div class="feed-avatar av-3">IM</div>
+                                            <div class="feed-info">
+                                                <div class="feed-name">Ibrahim Musa</div>
+                                                <div class="feed-meta">CSC/20/2214 · 10:14:08</div>
+                                            </div>
+                                            <div class="feed-status"><span class="badge-verified">✓ 2.4s</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Geo-fencing (narrow, 5 cols) -->
+                    <div class="bcard bcard-narrow" data-animate="up" style="transition-delay:0.1s">
+                        <div class="bcard-body">
+                            <div class="bcard-tag bcard-tag-blue">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                <span>Anti-Proxy</span>
+                            </div>
+                            <h3 class="bcard-title">GPS Hall Geo-Fencing</h3>
+                            <p class="bcard-desc">Lock attendance to the exact lecture hall boundary. Students outside the perimeter are automatically blocked from marking.</p>
+                        </div>
+                        <div class="bcard-visual bcard-visual-radar">
+                            <div class="geo-radar-hud">
+                                <div class="radar-grid-rings">
+                                    <div class="radar-grid-ring r3"></div>
+                                    <div class="radar-grid-ring r2"></div>
+                                    <div class="radar-grid-ring r1"></div>
+                                    <div class="radar-crosshair h"></div>
+                                    <div class="radar-crosshair v"></div>
+                                    <div class="radar-sweep"></div>
+                                    <div class="radar-pin-hall">
+                                        <div class="hall-pin-core">🏛️</div>
+                                        <div class="hall-pin-label">JAO 1 Hall</div>
+                                    </div>
+                                    <div class="radar-dot dot-1"></div>
+                                    <div class="radar-dot dot-2"></div>
+                                    <div class="radar-dot dot-3"></div>
+                                </div>
+                                <div class="geo-status-pill">
+                                    <span class="geo-pill-dot"></span>
+                                    <span>Inside Perimeter · <strong>98.4% Accuracy</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Live Analytics (half, 6 cols) -->
+                    <div class="bcard bcard-half" data-animate="up" style="transition-delay:0.15s">
+                        <div class="bcard-body">
+                            <div class="bcard-tag bcard-tag-yellow">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                                <span>Real-Time</span>
+                            </div>
+                            <h3 class="bcard-title">Live Class Intelligence</h3>
+                            <p class="bcard-desc">Watch lecture hall capacity update dynamically. Get automated late-arrival tags, absence breakdowns, and velocity metrics.</p>
+                        </div>
+                        <div class="bcard-visual bcard-visual-analytics">
+                            <div class="analytics-card-hud">
+                                <div class="analytics-top-row">
+                                    <div>
+                                        <div class="analytics-huge-num">184 <span>/ 210</span></div>
+                                        <div class="analytics-sub">Students Present (87.6%)</div>
+                                    </div>
+                                    <div class="analytics-velocity-badge">
+                                        <span class="v-icon">⚡</span> <strong>52</strong> scans/min
+                                    </div>
+                                </div>
+                                <div class="analytics-bar-track">
+                                    <div class="analytics-bar-fill" style="width: 87.6%;"></div>
+                                </div>
+                                <div class="analytics-pills-row">
+                                    <div class="a-pill present">
+                                        <span class="p-dot"></span> 184 On-Time
+                                    </div>
+                                    <div class="a-pill late">
+                                        <span class="p-dot"></span> 12 Late (&lt;15m)
+                                    </div>
+                                    <div class="a-pill absent">
+                                        <span class="p-dot"></span> 14 Absent
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: One-Click Export (half, 6 cols) -->
+                    <div class="bcard bcard-half" data-animate="up" style="transition-delay:0.2s">
+                        <div class="bcard-body">
+                            <div class="bcard-tag bcard-tag-purple">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                <span>Automated Export</span>
+                            </div>
+                            <h3 class="bcard-title">1-Click Senate-Ready Reports</h3>
+                            <p class="bcard-desc">Download cleanly structured attendance sheets in Excel, PDF, or CSV formatted for university grading systems and audit archives.</p>
+                        </div>
+                        <div class="bcard-visual bcard-visual-export">
+                            <div class="export-widget-hud">
+                                <div class="export-format-selector">
+                                    <div class="export-format-tab active">
+                                        <span class="fmt-icon fmt-excel">📊</span> Excel (.xlsx)
+                                    </div>
+                                    <div class="export-format-tab">
+                                        <span class="fmt-icon fmt-pdf">📄</span> PDF Sheet
+                                    </div>
+                                    <div class="export-format-tab">
+                                        <span class="fmt-icon fmt-csv">📝</span> CSV Data
+                                    </div>
+                                </div>
+                                <div class="export-preview-box">
+                                    <div class="preview-file-header">
+                                        <div class="file-name">📁 CSC301_Attendance_Week7.xlsx</div>
+                                        <div class="file-meta">24.2 KB · Senate Ready</div>
+                                    </div>
+                                    <div class="preview-mini-table">
+                                        <div class="pmt-row pmt-head">
+                                            <span>#</span><span>Matric No.</span><span>Full Name</span><span>Status</span>
+                                        </div>
+                                        <div class="pmt-row">
+                                            <span>1</span><span>2020/1042</span><span>Adebayo O.</span><span class="status-ok">Present</span>
+                                        </div>
+                                        <div class="pmt-row">
+                                            <span>2</span><span>2020/0893</span><span>Chioma E.</span><span class="status-ok">Present</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Zero App Required (third, 4 cols) -->
+                    <div class="bcard bcard-third" data-animate="up" style="transition-delay:0.25s">
+                        <div class="bcard-visual bcard-visual-mini">
+                            <div class="mini-feature-icon mini-icon-green">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                            </div>
+                            <div class="browser-mock-pill">
+                                <span class="browser-lock">🔒</span>
+                                <span class="browser-url">scanmark.ng/scan/csc301</span>
+                            </div>
+                        </div>
+                        <div class="bcard-body">
+                            <div class="bcard-tag">Accessibility</div>
+                            <h3 class="bcard-title">Zero App Required</h3>
+                            <p class="bcard-desc">Students scan in their default browser (Chrome, Safari, Opera). Zero storage needed, zero app-store friction.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Dynamic Rotating Tokens (third, 4 cols) -->
+                    <div class="bcard bcard-third" data-animate="up" style="transition-delay:0.3s">
+                        <div class="bcard-visual bcard-visual-mini">
+                            <div class="mini-feature-icon mini-icon-yellow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                            </div>
+                            <div class="token-timer-pill">
+                                <div class="token-timer-circle">
+                                    <span class="token-sec">5s</span>
+                                </div>
+                                <span class="token-hash">Token: <strong>SM-8492-X</strong></span>
+                            </div>
+                        </div>
+                        <div class="bcard-body">
+                            <div class="bcard-tag">Security</div>
+                            <h3 class="bcard-title">Dynamic 5s Tokens</h3>
+                            <p class="bcard-desc">QRs rotate every 5 seconds. WhatsApp screenshots sent to absent friends expire before they can ever be scanned.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Campus Bandwidth Optimized (third, 4 cols) -->
+                    <div class="bcard bcard-third" data-animate="up" style="transition-delay:0.35s">
+                        <div class="bcard-visual bcard-visual-mini">
+                            <div class="mini-feature-icon mini-icon-blue">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                            </div>
+                            <div class="data-speed-pill">
+                                <span class="data-badge">&lt; 35 KB</span>
+                                <span class="data-label">Fast on 2G &amp; 3G</span>
+                            </div>
+                        </div>
+                        <div class="bcard-body">
+                            <div class="bcard-tag">Performance</div>
+                            <h3 class="bcard-title">Built for Campus Networks</h3>
+                            <p class="bcard-desc">Engineered for Nigerian university data constraints. Extremely lightweight and reliable under heavy hall traffic.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HOW IT WORKS ===== -->
+        <section class="how-section section" id="how-it-works" aria-labelledby="how-heading">
+            <div class="container">
+                <div class="section-header" data-animate="up">
+                    <div class="eyebrow" style="background:rgba(255,255,255,0.06); color:rgba(255,255,255,0.6); border-color:rgba(255,255,255,0.1)">
+                        How It Works
+                    </div>
+                    <h2 id="how-heading" style="color:white">Three steps. That's it.</h2>
+                    <p>From walking into class to having a complete attendance record — all in under a minute.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step active" data-animate="up">
+                        <div class="step-num">01</div>
+                        <h3 class="step-title">Project the Code</h3>
+                        <p class="step-desc">Log in, open your course, and a unique dynamic QR code appears on screen. Project it to the class — that's your entire setup.</p>
+                    </div>
+                    <div class="step" data-animate="up" style="transition-delay:0.1s">
+                        <div class="step-num">02</div>
+                        <h3 class="step-title">Students Scan</h3>
+                        <p class="step-desc">Students open their phone camera and scan the code. No app download needed. Works directly in the browser in one tap.</p>
+                    </div>
+                    <div class="step" data-animate="up" style="transition-delay:0.2s">
+                        <div class="step-num">03</div>
+                        <h3 class="step-title">Instant Report</h3>
+                        <p class="step-desc">Close the session when ready. Your full attendance list is compiled and ready to export in CSV, Excel, or PDF format.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="testimonials-section section" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="section-header" data-animate="up">
+                    <div class="eyebrow">Testimonials</div>
+                    <h2 id="testimonials-heading">Loved by lecturers.</h2>
+                    <p>Real feedback from academics using ScanMark every day.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" data-animate="up">
+                        <div class="t-stars" aria-label="5 out of 5 stars">
+                            <span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span>
+                        </div>
+                        <p class="t-text">"I used to waste the first 10 minutes of every lecture calling names. ScanMark cut that to zero. My students love it too."</p>
+                        <div class="t-author">
+                            <div class="t-avatar" style="background: linear-gradient(135deg,#1A6638,#22874A)" aria-hidden="true">AO</div>
+                            <div>
+                                <div class="t-name">Dr. Adewale Okonkwo</div>
+                                <div class="t-role">Dept. of Computer Science, FUNAAB</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-animate="up" style="transition-delay:0.1s">
+                        <div class="t-stars" aria-label="5 out of 5 stars">
+                            <span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span>
+                        </div>
+                        <p class="t-text">"The geo-fencing feature is brilliant. We had proxy attendance issues in our 400-level classes. That problem is completely gone now."</p>
+                        <div class="t-author">
+                            <div class="t-avatar" style="background: linear-gradient(135deg,#1565C0,#1976D2)" aria-hidden="true">FK</div>
+                            <div>
+                                <div class="t-name">Prof. Funmilayo Kolawole</div>
+                                <div class="t-role">Dept. of Animal Physiology, FUNAAB</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-animate="up" style="transition-delay:0.2s">
+                        <div class="t-stars" aria-label="5 out of 5 stars">
+                            <span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span><span class="t-star">★</span>
+                        </div>
+                        <p class="t-text">"Exported a semester's worth of attendance records in one PDF. The format was perfect for our academic admin portal. Remarkable tool."</p>
+                        <div class="t-author">
+                            <div class="t-avatar" style="background: linear-gradient(135deg,#7B1FA2,#9C27B0)" aria-hidden="true">BI</div>
+                            <div>
+                                <div class="t-name">Dr. Babatunde Ige</div>
+                                <div class="t-role">Faculty of Engineering, FUNAAB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRICING ===== -->
+        <section class="pricing-section section" id="pricing" aria-labelledby="pricing-heading">
+            <div class="container">
+                <div class="section-header" data-animate="up">
+                    <div class="eyebrow">Pricing</div>
+                    <h2 id="pricing-heading">Simple, transparent pricing.</h2>
+                    <p>No hidden fees. Start free, upgrade when you need more power.</p>
+
+                    <div class="pricing-toggle">
+                        <span class="toggle-label active" id="toggle-monthly">Monthly</span>
+                        <label class="toggle-switch" aria-label="Billing frequency">
+                            <input type="checkbox" id="billing-toggle">
+                            <span class="toggle-track"></span>
+                        </label>
+                        <span class="toggle-label" id="toggle-yearly">
+                            Yearly <span class="save-badge">Save 20%</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Starter -->
+                    <div class="pricing-card" data-animate="up">
+                        <div class="plan-label">Starter</div>
+                        <div class="plan-price">
+                            <span class="currency">₦</span>
+                            <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <p class="plan-desc">Perfect for individual lecturers testing the system.</p>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features" role="list">
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                1 Active Course
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                Up to 100 Students
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                7-Day History Retention
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                Basic PDF Exports
+                            </li>
+                        </ul>
+                        <a href="https://scanmark-funaab.onrender.com/signup" class="btn btn-outline" style="width:100%;justify-content:center">Get Started Free</a>
+                    </div>
+
+                    <!-- Pro (featured) -->
+                    <div class="pricing-card featured" data-animate="up" style="transition-delay:0.1s">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="plan-label">Lecturer Pro</div>
+                        <div class="plan-price">
+                            <span class="currency">₦</span>
+                            <span class="amount" data-monthly="25,000" data-yearly="240,000">25,000</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <p class="plan-desc">For serious academics managing multiple large classes.</p>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features" role="list">
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                <strong>Unlimited</strong>&nbsp;Courses
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                <strong>Unlimited</strong>&nbsp;Students
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                Full Semester History
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                CSV, Excel &amp; PDF Exports
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                Priority Email Support
+                            </li>
+                        </ul>
+                        <a href="https://scanmark-funaab.onrender.com/signup" class="btn btn-green" style="width:100%;justify-content:center">Upgrade to Pro</a>
+                    </div>
+
+                    <!-- Department -->
+                    <div class="pricing-card" data-animate="up" style="transition-delay:0.2s">
+                        <div class="plan-label">Department</div>
+                        <div class="plan-price">
+                            <span class="amount" style="font-size:2.4rem">Custom</span>
+                        </div>
+                        <p class="plan-desc">For HODs and Deans needing oversight and cross-lecturer analytics.</p>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features" role="list">
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                All Pro Features
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                HOD Admin Dashboard
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                Cross-Lecturer Analytics
+                            </li>
+                            <li class="plan-feature">
+                                <span class="plan-check" aria-hidden="true">
+                                    <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="2,6 5,9 10,3"/>
+                                    </svg>
+                                </span>
+                                University SSO Integration
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline" style="width:100%;justify-content:center">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section class="faq-section section" id="faq" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="section-header" data-animate="up">
+                    <div class="eyebrow">FAQ</div>
+                    <h2 id="faq-heading">Common questions.</h2>
+                </div>
+
+                <div class="faq-list" role="list">
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                            Can students cheat by sharing the QR code with friends?
+                            <span class="faq-chevron" aria-hidden="true">
+                                <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="2,4 6,8 10,4"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer" id="faq-1" role="region">
+                            <p>No. Our dynamic QR codes rotate every 5 seconds, making screenshots useless almost instantly. On top of that, Geo-Fencing prevents scanning from outside the lecture hall's GPS boundary.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+                            Does it work if the internet is slow?
+                            <span class="faq-chevron" aria-hidden="true">
+                                <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="2,4 6,8 10,4"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer" id="faq-2" role="region">
+                            <p>Yes. ScanMark is built for African campus conditions. The student-facing interface weighs under 50kb — it loads almost instantly even on Edge/3G networks. The lecturer dashboard is also optimised for low-bandwidth.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+                            How do I export the attendance list?
+                            <span class="faq-chevron" aria-hidden="true">
+                                <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="2,4 6,8 10,4"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer" id="faq-3" role="region">
+                            <p>One click. From your dashboard, select any session or date range, then hit Export. You can download directly to CSV, Excel, or PDF — all formatted specifically for university grading and admin portals.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+                            Is there a limit on class size?
+                            <span class="faq-chevron" aria-hidden="true">
+                                <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="2,4 6,8 10,4"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer" id="faq-4" role="region">
+                            <p>The Starter plan supports up to 100 students. The Pro plan allows unlimited students and has been tested successfully with classes of over 1,500 attendees scanning simultaneously.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+                            Do students need to download an app?
+                            <span class="faq-chevron" aria-hidden="true">
+                                <svg viewBox="0 0 12 12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="2,4 6,8 10,4"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer" id="faq-5" role="region">
+                            <p>No. Students just open their phone camera and scan — the attendance form opens directly in their browser. No app store required, no signup for students. Completely frictionless.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta-box" data-animate="scale">
+                    <div class="cta-glow" aria-hidden="true"></div>
+                    <div class="cta-content">
+                        <div class="eyebrow" style="background:rgba(255,255,255,0.07); color:rgba(255,255,255,0.6); border-color:rgba(255,255,255,0.1); margin-bottom:24px">
+                            Get Started Today
+                        </div>
+                        <h2 id="cta-heading">Ready to modernize your classroom?</h2>
+                        <p>Join hundreds of lecturers saving hours every semester. Free to start, no credit card required.</p>
+                        <div class="cta-actions">
+                            <a href="https://scanmark-funaab.onrender.com/signup" class="btn btn-green btn-lg">Start Free Trial</a>
+                            <a href="https://scanmark-funaab.onrender.com/login" class="btn" style="background:rgba(255,255,255,0.1); color:white; padding:15px 32px; font-size:1rem; border-radius:999px;">Log in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="logo">ScanMark<span>.</span></div>
+                <div class="tagline">Built by LUSHEGS · FUNAAB</div>
+            </div>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="https://x.com/ScanMarkApp" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+                <a href="https://scanmark-funaab.onrender.com/login">Log in</a>
+            </nav>
+
+            <div class="footer-copy">
+                © 2026 ScanMark. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
