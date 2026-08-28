@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service | ScanMark</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Specific Styles for Legal Pages */
-        body { background: #f4f6f8; color: var(--text-main); }
-        
+        body { background: #f4f6f8; color: var(--ink); }
+
         .legal-header {
-            background: var(--primary);
+            background: var(--ink);
             color: white;
             padding: 80px 0 60px;
             text-align: center;
         }
+
+        .legal-header-logo {
+            width: 44px; height: 44px; margin: 0 auto 20px; padding: 8px;
+            background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+        }
+        .legal-header-logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
 
         .legal-container {
             max-width: 800px;
@@ -28,11 +37,11 @@
             position: relative;
         }
 
-        .legal-content h2 { margin-top: 40px; margin-bottom: 16px; font-size: 1.5rem; color: var(--primary); }
+        .legal-content h2 { margin-top: 40px; margin-bottom: 16px; font-size: 1.5rem; color: var(--green); }
         .legal-content h3 { margin-top: 24px; margin-bottom: 12px; font-size: 1.1rem; font-weight: 700; }
-        .legal-content p, .legal-content li { margin-bottom: 16px; color: var(--text-muted); line-height: 1.7; }
+        .legal-content p, .legal-content li { margin-bottom: 16px; color: var(--ink-2); line-height: 1.7; }
         .legal-content ul { padding-left: 20px; list-style-type: disc; }
-        
+
         .last-updated {
             font-size: 0.9rem;
             opacity: 0.8;
@@ -47,6 +56,12 @@
             display: flex; align-items: center; gap: 8px; opacity: 0.8; transition: opacity 0.2s;
         }
         .back-nav:hover { opacity: 1; }
+
+        .legal-footer-powered {
+            display: flex; align-items: center; justify-content: center; gap: 5px;
+            font-size: 0.8rem; color: var(--ink-3); margin-top: 8px;
+        }
+        .legal-footer-powered strong { color: var(--ink-2); font-weight: 700; }
     </style>
 </head>
 <body>
@@ -54,6 +69,7 @@
     <header class="legal-header">
         <div class="container">
             <a href="index.html" class="back-nav">← Back to Home</a>
+            <div class="legal-header-logo"><img src="logo.png" alt="" style="filter:brightness(0) invert(1)"></div>
             <h1>Terms of Service</h1>
             <span class="last-updated">Last Updated: January 27, 2026</span>
         </div>
@@ -110,8 +126,9 @@
         </div>
     </div>
 
-    <footer style="text-align: center; padding-bottom: 40px; color: var(--text-muted); font-size: 0.9rem;">
+    <footer style="text-align: center; padding-bottom: 40px; color: var(--ink-3); font-size: 0.9rem;">
         &copy; 2026 ScanMark Systems. All rights reserved.
+        <div class="legal-footer-powered">Powered by <strong>CampOS</strong></div>
     </footer>
 
 </body>
